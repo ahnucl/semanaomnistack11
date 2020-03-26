@@ -10,4 +10,5 @@ app.use(cors()); // Apenas isso permite que toda aplicaçao de front-end acesse 
 app.use(express.json()); 
 app.use(routes);
 
+
 app.listen(3333);
