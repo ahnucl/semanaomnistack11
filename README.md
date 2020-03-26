@@ -7,15 +7,15 @@ Novos conceitos que serão explorados:
 ## 23/03
 
 ### Checklist Primeiro dia
-	Apresentar aplicação
-	Configurar ambiente de desenvolvimento
-		Node.js & NPM
-		Visual Studio Code
-	Entender sobre back-end e front-end
-	Criar projeto com Node.js
-	Endender sobre React & SPA
-	Criar projeto com ReactJS
-	Entender sobre React Native & Expo
+- Apresentar aplicação
+- Configurar ambiente de desenvolvimento
+	- Node.js & NPM
+	- Visual Studio Code
+- Entender sobre back-end e front-end
+- Criar projeto com Node.js
+- Endender sobre React & SPA
+- Criar projeto com ReactJS
+- Entender sobre React Native & Expo
 
 ### Minhas anotações
 1. npm init cria o package.json
