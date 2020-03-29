@@ -36,9 +36,9 @@ Novos conceitos que serão explorados:
 ## 24/03
 
 - Node.js & Express
-	Rotas e recursos
-	Métodos HTTP
-	Tipos de parâmetros
+	- Rotas e recursos
+	- Métodos HTTP
+	- Tipos de parâmetros
 - Utilizando o Insomnia
 - Configurando Nodemon
 - Diferenças entre bancos de dados
@@ -103,6 +103,87 @@ criar script no package.json -> "start": "nodemon index.js"
 + Rota de login só verifica se a ONG existe ou não -> nome usual SessionController
 
 ## 25/03
+
+- Limpando estruturas
+- Conceitos do React
+	- Componentes
+	- JSX
+	- Propriedades
+	- Estado
+	- Imutabilidade
+- Configurando rotas
+- Cadastro de ONGs
+- Listagem de casos
+- Cadastro de um novo caso
+- Conectando aplicação à API
+- Enviar projeto ao Github
+
+1. Primeiro arquivo que é aberto pelo React é o **/public/index.html**
+	O React monta a estrutura da página via JavaScript
+
+2. React-dom -> integração do React com o navegador (DOM)
+
+3. Componentes no React podem ser escritos como Tags HTML
+	Um componente no React é uma função que retorna HTML
+
+4. Quando HTML está escrito dentro do Javascript temos JSX (Javascript XML)
+
+5. **Propriedades**: São análogas ao atributos do HTML, porém são passadas aos **Componentes do React** ao invés de para um elemento HTML -> usar argumento "props" no componente
+`
+// App
+function App() {
+  return (
+    <Header title="Semana OmniStack"/>
+  );
+}
+// Header
+ return(
+        <header>
+            <h1> {props.title} </h1>
+        </header>
+    );
+` 
+Ou
+`
+// App
+	return(
+	    <Header>
+	      Semana Omnistack
+	    </Header>
+	);
+// Header
+	return(
+        <header>
+            <h1> {props.children} </h1>
+        </header>
+    );  
+`
+
+6. O React é uma importação essencial em todo lugar que for ser utilizado JSX
+
+7. Injetar variáel, função, etc do JS dentro do HTML -> usar "{ }"
+
+8. Dá pra usar desestruturação no argumento do componente (*props*)
+
+9. No React não se pode colocar um elemento abaixo do outro sem um "container" - acho que é como se o componente só pode retornar UMA "tag" (o que tem dentro dela já é outra história...)
+
+10. Toda vez que o **Estado** for alterado o componente é remontado (renderizado novamente) para atualizar a tela
+
+11. Imutabilidade: Por questão de performance não é possível alterar diretamente o valor do estado -> necessário sobrepor o valor 
+
+12. Cada página será um componente (uma pasta pra cada também)
+
+13. Google Fonts: 27:20 / Ativar Emmet no VS Code : 31:20
+
+14. Pacotes de Icones: Material Icons, Font Awesome, Feather icons
+
+15. No React as classes no HTML (JSX) são indicadas por "className" pois "class" é uma palavra reservada do JS
+
+16. Rotas na aplicação frontend: react-router-dom
+
+17. Usar componente "Link" do react-router-dom no lugar do "a" do HTML -> comportamento SPA, não recarrega a página inteira
+
+Continuar em 52:00
 
 ## 26/03
 
